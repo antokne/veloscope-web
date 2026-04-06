@@ -5,58 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veloscope - Monitor Traffic While You Ride</title>
     <meta name="description" content="Connect your radar to monitor approaching traffic in real-time while cycling. Compatible with Garmin Varia RTL515 and Magene L508.">
+    <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
+    <header class="hero">
         <div class="container">
-            <a href="index.html" class="site-title">Veloscope</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                </ul>
-            </nav>
+            <div class="hero-title">
+                <img src="images/icon.png" alt="Veloscope icon" class="app-icon">
+                <h1>Veloscope</h1>
+            </div>
+            <p class="tagline">Monitor Traffic While You Ride</p>
+            <p class="description">A simple app that connects to your radar to record and view traffic data while riding, or analyze it afterward.</p>
+            <a href="https://apps.apple.com/app/id6450490389" class="app-store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>A simple app connecting to radar to record and view traffic data while riding or analysing post-ride.</h1>
-                <p class="tagline">Veloscope enables cyclists to connect with compatible radars via Bluetooth to monitor approaching vehicle traffic in real-time or review data afterward through MyBikeTraffic.com.</p>
-                <a href="https://apps.apple.com/app/id6450490389" class="app-store-badge">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-                </a>
-            </div>
-        </section>
-
         <section class="screenshots">
             <div class="container">
-                <div class="screenshot-grid">
-                    <img src="https://veloscopeapp.wordpress.com/wp-content/uploads/2023/07/1-3.png?w=473" alt="Veloscope radar view screenshot">
-                    <img src="https://veloscopeapp.wordpress.com/wp-content/uploads/2023/07/2-2.png?w=473" alt="Veloscope activity recording screenshot">
-                    <img src="https://veloscopeapp.wordpress.com/wp-content/uploads/2023/07/3-1.png?w=473" alt="Veloscope vehicle data screenshot">
-                </div>
+                <table class="screenshot-table">
+                    <tr>
+                        <td><img src="images/screenshot-1.png" alt="Veloscope radar view"></td>
+                        <td><img src="images/screenshot-2.png" alt="Veloscope activity recording"></td>
+                        <td><img src="images/screenshot-3.png" alt="Veloscope vehicle data"></td>
+                    </tr>
+                </table>
             </div>
         </section>
 
         <section class="features">
             <div class="container">
                 <h2>Features</h2>
-                <ul>
-                    <li><strong>Radar Traffic View</strong> — Customizable positioning (left/right) with optional audible alerts as vehicles approach</li>
-                    <li><strong>Vehicle Monitoring</strong> — Real-time vehicle counts plus totals during activity sessions</li>
-                    <li><strong>Speed Data</strong> — Displays relative approach speeds and absolute speeds of nearest vehicles</li>
-                    <li><strong>Activity Recording</strong> — iPhone GPS captures start time, duration, distance, average/max speeds with integrated radar data</li>
-                    <li><strong>Auto Pause/Resume</strong> — Configurable automatic pausing functionality</li>
-                    <li><strong>Activity Recovery</strong> — Restart capability without losing session data</li>
-                    <li><strong>Auto-Upload</strong> — Optional background uploading to MyBikeTraffic.com with success notifications</li>
-                    <li><strong>Dark/Light Mode</strong> — Full theme compatibility</li>
-                    <li><strong>FIT File Export</strong> — Share activity files with other apps or computers</li>
-                    <li><strong>Data Field Customization</strong> — Drag-and-drop reordering interface</li>
-                    <li><strong>Radar Disconnect Alerts</strong> — Optional notifications when connection is lost</li>
-                </ul>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <h3>Radar Traffic View</h3>
+                        <p>Customizable positioning with optional audible alerts as vehicles approach.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Real-Time Monitoring</h3>
+                        <p>See vehicle counts and totals during your activity sessions.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Speed Data</h3>
+                        <p>View relative approach speeds and absolute speeds of approaching vehicles.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Activity Recording</h3>
+                        <p>Record start time, duration, distance, and average/max speeds with integrated radar data.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Auto Pause/Resume</h3>
+                        <p>Configurable automatic pausing so you can focus on your ride.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Activity Recovery</h3>
+                        <p>Restart the app without losing your session data.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Auto-Upload</h3>
+                        <p>Optional background uploading to MyBikeTraffic.com with success notifications.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>FIT File Export</h3>
+                        <p>Share your activity files with other apps or your computer.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -82,8 +98,8 @@
         <div class="container">
             <nav>
                 <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="https://indieapps.space/@veloscope" rel="me">Mastodon</a>
             </nav>
-            <a href="https://indieapps.space/@veloscope" rel="me" class="social-link">@veloscope on Mastodon</a>
         </div>
     </footer>
 </body>

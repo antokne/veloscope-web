@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Literata:wght@400;500;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,118 +5,89 @@
 }
 
 :root {
-    --color-heading: #11181F;
-    --color-link: #005ae1;
-    --color-text: #474747;
-    --color-bg: #ffffff;
-    --color-bg-alt: #f7f9fd;
-    --color-border: #e5e7eb;
-    --font-heading: 'Literata', Georgia, serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --primary-color: #6b6b6b;
+    --text-color: #1f2937;
+    --text-muted: #6b7280;
+    --bg-light: #f9fafb;
+    --border-color: #e5e7eb;
 }
 
 body {
-    font-family: var(--font-body);
-    line-height: 1.7;
-    color: var(--color-text);
-    background: var(--color-bg);
-}
-
-a {
-    color: var(--color-link);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0 40px;
-}
-
-/* Header / Navigation */
-header.site-header {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--color-border);
-}
-
-header.site-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-title {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-heading);
-    text-decoration: none;
-}
-
-.site-title:hover {
-    text-decoration: none;
-}
-
-nav.main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-nav.main-nav a {
-    color: var(--color-text);
-    font-size: 0.95rem;
-}
-
-nav.main-nav a:hover {
-    color: var(--color-link);
+    padding: 0 1.5rem;
 }
 
 /* Hero Section */
 .hero {
+    background: var(--primary-color);
+    color: white;
     padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
 }
 
 .hero h1 {
-    font-family: var(--font-heading);
-    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-size: 3rem;
     font-weight: 700;
-    color: var(--color-heading);
-    line-height: 1.3;
-    margin-bottom: 1.5rem;
-    max-width: 700px;
 }
 
 .hero .tagline {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.hero .description {
     font-size: 1.125rem;
-    color: var(--color-text);
+    opacity: 0.85;
     max-width: 600px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
 }
 
 .app-store-badge img {
-    height: 44px;
+    height: 50px;
 }
 
 /* Screenshots Section */
 .screenshots {
     padding: 3rem 0;
-    background: var(--color-bg-alt);
+    background: var(--bg-light);
 }
 
-.screenshot-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.screenshot-table {
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 1.5rem;
 }
 
-.screenshot-grid img {
+.screenshot-table td {
+    width: 33.33%;
+    vertical-align: top;
+}
+
+.screenshot-table img {
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -131,122 +100,131 @@ nav.main-nav a:hover {
 }
 
 .features h2 {
-    font-family: var(--font-heading);
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: var(--color-heading);
-    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
 }
 
-.features ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    max-width: 700px;
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-.features li {
-    margin-bottom: 0.75rem;
+.feature {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: var(--bg-light);
 }
 
-.features li strong {
-    color: var(--color-heading);
+.feature h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.feature p {
+    color: var(--text-muted);
 }
 
 /* Compatibility Section */
 .compatibility {
     padding: 3rem 0;
-    background: var(--color-bg-alt);
+    background: var(--bg-light);
+    text-align: center;
 }
 
 .compatibility h2 {
-    font-family: var(--font-heading);
     font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-heading);
     margin-bottom: 1rem;
 }
 
 .compatibility ul {
-    list-style: disc;
-    padding-left: 1.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .compatibility li {
-    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    font-size: 1.125rem;
 }
 
 /* Pricing Section */
 .pricing {
     padding: 3rem 0;
+    text-align: center;
 }
 
 .pricing h2 {
-    font-family: var(--font-heading);
     font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-heading);
     margin-bottom: 1rem;
+}
+
+.pricing p {
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* Footer */
 footer {
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--border-color);
     padding: 2rem 0;
-    margin-top: 2rem;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 footer nav {
     display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
 footer a {
-    color: var(--color-text);
-    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--color-link);
-}
-
-.social-link {
-    color: var(--color-text);
-    font-size: 0.9rem;
+    color: var(--primary-color);
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
-
-    header.site-header .container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    nav.main-nav ul {
-        gap: 1.5rem;
-    }
-
+@media (max-width: 640px) {
     .hero {
         padding: 3rem 0;
     }
 
-    .screenshot-grid {
-        grid-template-columns: 1fr;
-        max-width: 300px;
+    .hero-title {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
-    footer .container {
+    .app-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.25rem;
+    }
+
+    .features,
+    .pricing {
+        padding: 2.5rem 0;
+    }
+
+    .screenshot-table {
+        border-spacing: 0.75rem;
+    }
+
+    .compatibility ul {
         flex-direction: column;
-        gap: 1rem;
-        text-align: center;
+        gap: 0.5rem;
     }
 }
