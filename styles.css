@@ -152,6 +152,42 @@ body {
     font-size: 1.125rem;
 }
 
+/* Coming Up Section */
+.coming-up {
+    padding: 4rem 0;
+}
+
+.coming-up h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.coming-up-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.coming-up-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: var(--bg-light);
+    border-left: 3px solid var(--primary-color);
+}
+
+.coming-up-item h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.coming-up-item p {
+    color: var(--text-muted);
+}
+
 /* Pricing Section */
 .pricing {
     padding: 3rem 0;
@@ -226,5 +262,9 @@ footer a:hover {
     .compatibility ul {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .coming-up {
+        padding: 2.5rem 0;
     }
 }
