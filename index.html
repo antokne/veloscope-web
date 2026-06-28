@@ -3,42 +3,78 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veloscope - Monitor Traffic While You Ride</title>
-    <meta name="description" content="Connect your radar to monitor approaching traffic in real-time while cycling. Compatible with Garmin Varia RTL515 and Magene L508.">
+    <title>Veloscope — Know what's coming up behind you</title>
+    <meta name="description" content="Connect your radar to see approaching traffic in real time while you ride. Compatible with Garmin Varia RTL515, Magene L508, and Wahoo Radar.">
     <link rel="icon" type="image/png" href="images/icon.png">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Veloscope — Know what's coming up behind you">
+    <meta property="og:description" content="Connect your radar to see approaching traffic in real time while you ride.">
+    <meta property="og:url" content="https://veloscope.app/">
+    <meta property="og:image" content="images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Veloscope — Know what's coming up behind you">
+    <meta name="twitter:description" content="Connect your radar to see approaching traffic in real time while you ride.">
+    <meta name="twitter:image" content="images/og-image.png">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="site-nav">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="images/icon.png" alt="" width="30" height="30">
+                Veloscope
+            </a>
+            <a href="https://apps.apple.com/app/id6450490389" class="nav-cta">Get the app</a>
+        </div>
+    </nav>
+
     <header class="hero">
         <div class="container">
-            <div class="hero-title">
-                <img src="images/icon.png" alt="Veloscope icon" class="app-icon">
-                <h1>Veloscope</h1>
+            <div class="hero-copy">
+                <span class="kicker">Radar-connected</span>
+                <h1>Know what's coming up <span class="accent">behind you.</span></h1>
+                <p class="lead">Connect your radar and see approaching traffic in real time — recorded as you ride, ready to review afterward.</p>
+                <div class="hero-actions">
+                    <a href="https://apps.apple.com/app/id6450490389" class="app-store-badge">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="156" height="52">
+                    </a>
+                    <span class="price-line">Free to try · 3 activities</span>
+                </div>
             </div>
-            <p class="tagline">Monitor Traffic While You Ride</p>
-            <p class="description">A simple app that connects to your radar to record and view traffic data while riding, or analyze it afterward.</p>
-            <a href="https://apps.apple.com/app/id6450490389" class="app-store-badge">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-            </a>
+
+            <div class="radar" aria-hidden="true">
+                <div class="radar__track"></div>
+                <span class="radar__you">YOU</span>
+                <span class="radar__dot"></span>
+                <span class="radar__label">APPROACHING</span>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="screenshots">
             <div class="container">
-                <table class="screenshot-table">
-                    <tr>
-                        <td><img src="images/screenshot-1.png" alt="Veloscope radar view"></td>
-                        <td><img src="images/screenshot-2.png" alt="Veloscope activity recording"></td>
-                        <td><img src="images/screenshot-3.png" alt="Veloscope vehicle data"></td>
-                    </tr>
-                </table>
+                <div class="section-head">
+                    <span class="kicker">See it in action</span>
+                    <h2>Record, monitor, analyse</h2>
+                </div>
+                <div class="screenshots-grid">
+                    <img src="images/screenshot-1.png" alt="Veloscope radar view" width="820" height="1774" loading="lazy">
+                    <img src="images/screenshot-2.png" alt="Veloscope activity recording" width="820" height="1774" loading="lazy">
+                    <img src="images/screenshot-3.png" alt="Veloscope vehicle data" width="820" height="1774" loading="lazy">
+                </div>
             </div>
         </section>
 
         <section class="features">
             <div class="container">
-                <h2>Features</h2>
+                <div class="section-head">
+                    <span class="kicker">What it does</span>
+                    <h2>Features</h2>
+                </div>
                 <div class="feature-grid">
                     <div class="feature">
                         <h3>Radar Traffic View</h3>
@@ -86,26 +122,29 @@
                     </div>
                     <div class="feature">
                         <h3>Headphone Audio Alerts</h3>
-                        <p>Listening to music through headphones? Veloscope briefly lowers your music as alerts play so you never miss a vehicle alert.</p>
+                        <p>Listening to music through headphones? Veloscope plays vehicle alerts through your headphones so you never miss one.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="lock-screen-showcase">
+        <section class="lock-screen-showcase band">
             <div class="container">
-                <h2>Always with You</h2>
+                <div class="section-head">
+                    <span class="kicker">At a glance</span>
+                    <h2>Always with You</h2>
+                </div>
                 <div class="showcase-grid">
                     <div class="showcase-item">
                         <div class="showcase-image showcase-image--wide">
-                            <img src="images/live-activity.jpg" alt="Live Activity showing duration, distance, speed and vehicle count">
+                            <img src="images/live-activity.jpg" alt="Live Activity showing duration, distance, speed and vehicle count" width="1242" height="478" loading="lazy">
                         </div>
                         <h3>Live Activity</h3>
                         <p>Your key stats — right on the Lock Screen and Dynamic Island. No need to unlock your phone.</p>
                     </div>
                     <div class="showcase-item">
                         <div class="showcase-image showcase-image--phone-top">
-                            <img src="images/home-screen.png" alt="Lock screen with Veloscope widget">
+                            <img src="images/home-screen.png" alt="Lock screen with Veloscope widget" width="640" height="1385" loading="lazy">
                         </div>
                         <h3>Lock Screen Widget</h3>
                         <p>A lock screen accessory widget keeps Veloscope one tap away.</p>
@@ -114,19 +153,19 @@
             </div>
         </section>
 
-        <section class="coming-soon">
+        <section class="whats-new">
             <div class="container">
-                <div class="coming-soon-header">
-                    <span class="coming-soon-badge">Now Available</span>
+                <div class="whats-new-header">
+                    <span class="whats-new-badge">Now Available</span>
                     <h2>What's New in 1.2</h2>
                     <p>Apple Watch support and more — available now in version 1.2.</p>
                 </div>
 
-                <div class="coming-soon-watch">
-                    <div class="coming-soon-watch-image">
-                        <img src="images/watch-preview.png" alt="Veloscope on Apple Watch showing duration, distance, speed and vehicle count">
+                <div class="whats-new-watch">
+                    <div class="whats-new-watch-image">
+                        <img src="images/watch-preview.png" alt="Veloscope on Apple Watch showing duration, distance, speed and vehicle count" width="594" height="650" loading="lazy">
                     </div>
-                    <div class="coming-soon-watch-text">
+                    <div class="whats-new-watch-text">
                         <h3>Apple Watch</h3>
                         <p>Veloscope is now on your wrist. View live radar alerts, car counts, and recording status directly on Apple Watch — and stop recordings without reaching for your phone.</p>
                         <ul>
@@ -138,16 +177,16 @@
                     </div>
                 </div>
 
-                <div class="coming-soon-grid">
-                    <div class="coming-soon-feature">
+                <div class="whats-new-grid">
+                    <div class="whats-new-feature">
                         <h3>Watch Complications</h3>
                         <p>Add Veloscope to your watch face for instant access to start and stop recordings.</p>
                     </div>
-                    <div class="coming-soon-feature">
+                    <div class="whats-new-feature">
                         <h3>Haptic Alerts</h3>
                         <p>Get wrist haptics when vehicles are detected behind you — no need to glance at your phone.</p>
                     </div>
-                    <div class="coming-soon-feature">
+                    <div class="whats-new-feature">
                         <h3>Improved Background Uploads</h3>
                         <p>Activity uploads to MyBikeTraffic are more reliable. If an upload is interrupted, it resumes automatically next time the app runs.</p>
                     </div>
@@ -155,7 +194,7 @@
             </div>
         </section>
 
-        <section class="compatibility">
+        <section class="compatibility band">
             <div class="container">
                 <h2>Compatible Radars</h2>
                 <ul>
@@ -170,6 +209,9 @@
             <div class="container">
                 <h2>Pricing</h2>
                 <p>Free to try with 3 activities. Unlock unlimited recording with a one-time in-app purchase.</p>
+                <a href="https://apps.apple.com/app/id6450490389" class="app-store-badge">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="156" height="52">
+                </a>
             </div>
         </section>
     </main>
