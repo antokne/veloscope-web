@@ -3,56 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veloscope - About</title>
+    <title>Veloscope — About</title>
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .page-content {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem 4rem;
-        }
-        .page-content h1 {
-            font-size: 2rem;
-            margin: 2rem 0 1rem;
-        }
-        .page-content p {
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-        .page-content a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        .page-content a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .about-image {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-        }
-    </style>
 </head>
 <body>
-    <div class="page-content">
+    <nav class="site-nav">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="images/icon.png" alt="" width="30" height="30">
+                Veloscope
+            </a>
+            <a href="https://apps.apple.com/app/id6450490389" class="nav-cta">Get the app</a>
+        </div>
+    </nav>
+
+    <main class="page">
         <a href="index.html" class="back-link">&larr; Back to Veloscope</a>
-        <header>
-            <h1>About</h1>
-        </header>
+        <h1>About</h1>
         <article>
-            <img src="images/about-header.png" alt="The Maratona in the Italian Dolomites" class="about-image">
+            <img src="images/about-header.png" alt="The Maratona in the Italian Dolomites" class="page-image" width="1440" height="632" loading="lazy">
             <p>Veloscope is developed by Ant G, an ex-Wahooligan who helped build the Wahoo ELEMNT iOS Companion app, continuing the cycling journey and building apps to support cyclists.</p>
         </article>
-    </div>
+    </main>
 </body>
 </html>
